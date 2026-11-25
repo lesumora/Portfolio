@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Design tokens. NetworkBackground reads --line, --node, --primary, --accent-glow. */
+:root {
+  --bg: #fafafa;
+  --fg: #0b0d12;
+  --muted: #5a6272;
+  --card: rgba(255, 255, 255, 0.88);
+  --border: rgba(11, 13, 18, 0.1);
+
+  --line: #64748b;
+  --node: #94a3b8;
+  --primary: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.14);
+}
+
+.dark {
+  --bg: #07080b;
+  --fg: #f2f4f8;
+  --muted: #8b93a4;
+  --card: rgba(16, 18, 24, 0.86);
+  --border: rgba(255, 255, 255, 0.1);
+
+  --line: #64748b;
+  --node: #475569;
+  --primary: #60a5fa;
+  --accent-glow: rgba(96, 165, 250, 0.16);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent-glow);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
