@@ -1,11 +1,11 @@
 import { About } from '@/components/About'
 import { Contact } from '@/components/Contact'
+import { Footer } from '@/components/Footer'
 import { Experience } from '@/components/Experience'
 import { Hero } from '@/components/Hero'
 import { Nav } from '@/components/Nav'
 import { NetworkBackground } from '@/components/NetworkBackground'
 import { Projects } from '@/components/Projects'
-import { site } from '@/data/site'
 
 export default function App() {
   return (
@@ -20,9 +20,7 @@ export default function App() {
           <About />
           <Contact />
         </main>
-        <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted">
-          © {new Date().getFullYear()} {site.name}
-        </footer>
+        <Footer />
       </div>
     </>
   )

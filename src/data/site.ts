@@ -43,6 +43,15 @@ export interface Experience {
   points: string[]
 }
 
+/**
+ * How this site is published. Shown in the footer's "How this site is deployed" panel.
+ * `repo` is this portfolio's GitHub URL, used for the "View the workflow" and "Source" links.
+ */
+export const deployment = {
+  repo: 'https://github.com/lesumora/portfolio',
+  workflowPath: '.github/workflows/deploy.yaml',
+}
+
 export const site = {
   name: 'Jaden Mimura',
   handle: 'jaden mimura',
@@ -51,12 +60,12 @@ export const site = {
   status: 'Open to entry-level roles',
   location: 'Bulacan, Philippines',
   intro:
-    'I am an IT Graduate at Bulacan State University Main Campus. I build full-stack web apps with Laravel, React and PHP, and I had an AWS internship at Accenture Philippines.',
+    'Hi, I am an IT Graduate at Bulacan State University Main Campus. I build full-stack web apps with Laravel, React and PHP, and I had an AWS internship at Accenture Philippines.',
   email: 'mimurajaden@gmail.com',
   resume: '/Jaden-Mimura-Resume.pdf',
   about: [
     'I studied Information Technology at Bulacan State University (GWA 1.37, Dean’s Lister 2023–2024). Most of my project work is full-stack web development in PHP, Laravel and React.',
-    'I also enjoy the infrastructure side. In an AWS internship at Accenture I designed a secure multi-AZ network, and I am building more cloud projects. I am looking for a first role where I can keep learning on real systems.',
+    'I also enjoy the cloud infrastructure side. In an AWS internship at Accenture I designed a secure multi-AZ network, and I am building more cloud projects. I am looking for a first role where I can keep learning on real systems.',
   ],
   skills: [
     { group: 'Languages', items: ['Python', 'TypeScript', 'JavaScript', 'PHP', 'Java', 'C++'] },
