@@ -1,4 +1,4 @@
-# Jaden Mimura's Portfolio
+# My Portfolio
 
 A personal portfolio for showing projects, internships and certifications to recruiters. It is a static site: React and Vite build it into plain files, GitHub Actions publishes them to Amazon S3, and CloudFront serves them.
 
@@ -114,5 +114,6 @@ The "How this site is deployed" panel in the footer mirrors the workflow. If you
 
 ## Credits
 
-- Claude, made by Anthropic, my goat.
+- Background inspiration [Network Topology Mesh Graphic]
 - Icons from [Lucide](https://lucide.dev/icons/)
+- Claude
